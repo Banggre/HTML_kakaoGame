@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="/socket.io/socket.io.js"></script>
+
+    <script type="text/javascript" src="/node_modules/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="/assets/js/phaser.min(2.11.0).js"></script>
+    <script type="text/javascript" src="/assets/js/client_room.js"></script>
+    <script type="text/javascript" src="/assets/js/character.js"></script>
+    <script type="text/javascript" src="/assets/js/item.js"></script>
+    <script type="text/javascript" src="/assets/js/select.js"></script>
+    <script type="text/javascript" src="/assets/js/game.js"></script>
+    <script type="text/javascript" src="/assets/js/game_over_win.js"></script>
+    <script type="text/javascript" src="/assets/js/game_over_lose.js"></script>
+    <title> SHOW ME THE 귀요미 </title>
+    <link rel="stylesheet" type="text/css"  href="/assets/css/style.css?ver=1">
+</head>
+<body>
+    <script>
+          $("document").ready(function() {
+              $(window).trigger("orientationchange"); // 최초 페이지 로딩 시 가로, 세로를 모르기 때문에 trigger로 처리
+          });
+          $(window).bind("orientationchange", function(e) { // 가로세로 전환 처리
+              var orientation = window.orientation;
+              console.log(orientation);
+
+              if (orientation == 0) {
+                  alert('가로모드로 하는게 더 재밌을걸?');
+              }
+          });
+
+    </script>
+
+    <div class="container">
+        <div class="menu">
+            <input type="image" id="go" src="/assets/images/go.png" value="go" required>
+            <input type="image" id="tutorial" src="/assets/images/tutorial.png" value="tutorial" required>
+        </div>
+    </div>
+
+    <div class="tutorialBoard">
+        <div id="realTutorial" style="max-width:100%">
+            <img class="mySlides" src="/assets/tutorial/01.png" style="width:100%">
+            <img class="mySlides" src="/assets/tutorial/02.png" style="width:100%">
+            <img class="mySlides" src="/assets/tutorial/03.png" style="width:100%">
+            <img class="mySlides" src="/assets/tutorial/04.png" style="width:100%">
+            <img class="mySlides" src="/assets/tutorial/05.png" style="width:100%">
+            <img class="mySlides" src="/assets/tutorial/06.png" style="width:100%">
+            <img class="mySlides" src="/assets/tutorial/07.png" style="width:100%">
+            <img class="mySlides" src="/assets/tutorial/08.png" style="width:100%">
+            <img class="mySlides" src="/assets/tutorial/09.png" style="width:100%">
+            <img class="mySlides" src="/assets/tutorial/10.png" style="width:100%">
+            <img class="mySlides" src="/assets/tutorial/11.png" style="width:100%">
+            <img class="mySlides" src="/assets/tutorial/12.png" style="width:100%">
+            <img class="mySlides" src="/assets/tutorial/13.png" style="width:100%">
+            <img class="mySlides" src="/assets/tutorial/14.png" style="width:100%">
+            <img class="mySlides" src="/assets/tutorial/15.png" style="width:100%">
+            <img class="mySlides" src="/assets/tutorial/16.png" style="width:100%">
+            <img class="mySlides" src="/assets/tutorial/17.png" style="width:100%">
+            <img class="mySlides" src="/assets/tutorial/18.png" style="width:100%">
+            <img class="mySlides" src="/assets/tutorial/19.png" style="width:100%">
+            <img class="mySlides" src="/assets/tutorial/20.png" style="width:100%">
+            <img class="mySlides" src="/assets/tutorial/21.png" style="width:100%">
+            <img class="mySlides" src="/assets/tutorial/22.png" style="width:100%">
+        </div>
+    </div>
+
+    <div class="gameBoard">
+        <h1 id="userHello"></h1>
+        <h2 id="turn"></h2>
+        <img id="matching" src="/assets/images/matching.png" alt="matching"/>
+        <div id="kakaoGame"></div>
+    </div>
+</body>
+
+</html>

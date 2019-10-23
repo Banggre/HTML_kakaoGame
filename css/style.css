@@ -1,0 +1,68 @@
+html{
+		font-family : 'Montserrat', sans-serif;
+		text-rendering: optimizeLegibility !important;
+		-webkit-font-smoothing: antialiased !important;
+		color : #555;
+		font-weight : 400;
+		margin : 0;
+	  padding : 0;
+		width : 100% !important;
+		height : 100% !important;
+	  background : url(../images/menu.png) no-repeat;
+		background-size : cover;
+	  background-position : center center;
+}
+
+body{
+		margin: 0;
+		padding: 0;
+		height: 100% !important;
+		width : 100% !important;
+		overflow-y: hidden;
+		overflow-x: hidden;
+}
+
+div{
+		margin : 0;
+		padding : 0;
+		height: 100% !important;
+		width : 100% !important;
+}
+
+.mySlides {
+		display: none;
+}
+
+.gameBoard {
+		display: none;
+}
+
+#go {
+		position : fixed;
+		width : 30%;
+		left : 30%;
+		top : 70%;
+}
+
+#tutorial {
+		position : fixed;
+		width : 11%;
+		left : 61%;
+		top : 69.5%;
+}
+
+#matching {
+		display: none;
+		position : fixed;
+		width : 30%;
+		left : 36%;
+		top : 70%;
+}
+
+#kakaoGame {
+		height: 100% !important;
+		width : 100% !important;
+		position : fixed;
+		left : 0%;
+		top : 0%;
+}
